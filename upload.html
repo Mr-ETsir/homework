@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GamInHub - 上传PV视频/情报</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      main {
+        padding: 20px;
+      }
+      form {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="file"],
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #666;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background-color: #444;
+        color: #fff;
+      }
+      textarea {
+        resize: vertical;
+      }
+      button[type="submit"] {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button[type="submit"]:hover {
+        background-color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 页眉部分 -->
+    <header class="ph-header">
+      <nav class="ph-nav">
+        <ul>
+          <div class="ph-logo">
+            <img src="image/path_to_your_logo.png" alt="网站Logo" />
+          </div>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="About Us.html">关于我们</a></li>
+          <li><a href="service.html">服务</a></li>
+          <li class="current"><a href="upload.html">上传PV视频/情报</a></li>
+          <li class="dropdown">
+            <a href="enlo.html">登录 / 注册</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 主要内容部分 -->
+    <main>
+      <section class="upload-section">
+        <h2>上传PV视频/情报</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="video">上传视频 (MP4 格式)</label>
+            <input
+              type="file"
+              id="video"
+              name="video"
+              accept="video/mp4"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="title">标题</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group">
+            <label for="description">描述</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">提交</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- 页脚部分 -->
+    <footer class="ph-footer">
+      <p class="ph-footer-text">
+        班级：计科2302 学号：20230021035 姓名：刘京辰
+      </p>
+    </footer>
+  </body>
+</html>
